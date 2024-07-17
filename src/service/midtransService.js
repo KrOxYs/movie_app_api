@@ -5,8 +5,8 @@ import { proccesPaymentResponse } from "../helper/subscriptionHelper.js";
 const MIDTRANS_SERVER_KEY = process.env.MIDTRANS_SERVER_KEY;
 const coreApi = new midtransClient.CoreApi({
   isProduction: false,
-  serverKey: "SB-Mid-server-PLGRiDOv-pny2_MWV2-jxMeX",
-  clientKey: "SB-Mid-client-5c2QDnsFCLNcG_R3",
+  serverKey: MIDTRANS_SERVER_KEY,
+  clientKey: process.env.MIDTRANS_CLIENT_KEY,
 });
 
 const initiatePayment = async (order_id, amount, costomer_id, payment_type) => {

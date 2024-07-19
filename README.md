@@ -40,14 +40,6 @@ Create a .env file in the following the .env.example
 ```
 docker-compose up -d
 ```
-5. Run migrations
-```
-npx sequelize db:migrate
-```
-6. Start the server
-```
-npm start
-```
 
 
 
